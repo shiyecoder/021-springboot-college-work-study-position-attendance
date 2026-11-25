@@ -1,0 +1,44 @@
+server:
+  port: 8082
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+spring:
+  application:
+    name: work-study
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/new_021?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: "123456"
+    hikari:
+      maximum-pool-size: 8
+      minimum-idle: 2
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 60MB
+  jackson:
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+app:
+  upload-dir: ./uploads
+  jwt-secret: work-study-graduation-project-2026-secret-key-please-change-it
+  jwt-expire-hours: 12
+  login-fail-limit: 5
+  login-lock-minutes: 10
+
+logging:
+  level:
+    root: warn
+    com.grad.ws: info

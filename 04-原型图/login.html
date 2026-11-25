@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>登录 · 勤工助学岗位与考勤管理系统</title>
+<link rel="stylesheet" href="assets/style.css"><style>
+body{background:linear-gradient(120deg,#0F2A3D 0%,#173B57 48%,#287271 100%);height:100vh;overflow:hidden}
+.wrap{display:flex;height:100vh;align-items:center;justify-content:center;gap:0}
+.left{color:#fff;width:520px;padding-right:60px}
+.left h1{font-size:30px;line-height:1.4;font-weight:600;margin-bottom:14px}
+.left p{color:rgba(255,255,255,.72);font-size:14px;line-height:2}
+.pill{display:inline-block;margin-top:26px;padding:6px 14px;border:1px solid rgba(255,255,255,.28);border-radius:20px;font-size:12px;color:rgba(255,255,255,.85)}
+.panel{width:372px;background:#fff;border-radius:12px;padding:34px 32px;box-shadow:0 18px 50px rgba(8,24,36,.32)}
+.panel h2{font-size:20px;margin-bottom:6px;color:#173B57}
+.panel .sub{font-size:12px;color:#8A99A5;margin-bottom:24px}
+.fld{margin-bottom:16px} .fld label{display:block;font-size:12px;color:#5A6B77;margin-bottom:6px}
+.fld input{width:100%;height:42px;border:1px solid #DFE7EC;border-radius:7px;padding:0 12px;font-size:14px;font-family:inherit}
+.fld input:focus{outline:none;border-color:#2F6B8A;box-shadow:0 0 0 3px rgba(47,107,138,.12)}
+.btn-login{width:100%;height:42px;border:none;border-radius:7px;background:#173B57;color:#fff;font-size:15px;cursor:pointer;margin-top:6px}
+.roles{display:flex;gap:6px;margin-top:18px;flex-wrap:wrap}
+.roles span{font-size:11px;padding:3px 9px;border:1px solid #DFE7EC;border-radius:12px;color:#5A6B77;cursor:pointer}
+.roles span:hover{border-color:#2F6B8A;color:#173B57}
+</style></head><body><div class="wrap">
+<div class="left"><h1>高校勤工助学<br>岗位与考勤管理系统</h1>
+<p>岗位申报 · 资格审核 · 排班考勤 · 工时复核 · 补贴核算<br>全流程线上留痕，补贴发放可追溯</p>
+<span class="pill">2026 秋季学期 · 学生资助管理中心</span></div>
+<div class="panel"><h2>账号登录</h2><div class="sub">使用学号或工号登录，首次登录请修改初始密码</div>
+<form onsubmit="location.href='dashboard.html';return false">
+<div class="fld"><label>账号</label><input type="text" value="admin" autocomplete="username"></div>
+<div class="fld"><label>密码</label><input type="password" value="admin123" autocomplete="current-password"></div>
+<button class="btn-login" type="submit">登 录</button></form>
+<div class="roles"><span>学生 s_2023010214</span><span>用工老师 t_zhou</span><span>财务 fin_liu</span></div>
+</div></div></body></html>
